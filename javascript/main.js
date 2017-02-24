@@ -1,11 +1,13 @@
 
 // Capture the value from the input box
 document.querySelector('.js-go').addEventListener('click', function(e){
+  document.querySelector('.js-container').innerHTML = "";
   var input = document.querySelector("input").value;
   inputinUrl(input);
 });
 
 document.querySelector('.js-go').addEventListener('keyup', function(e){
+  document.querySelector('.js-container').innerHTML = "";
   var input = document.querySelector("input").value;
   if (e.which === 13)
   {
